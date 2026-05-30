@@ -3,20 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Başlık güncellendi -->
-    <title>Derya Öztürk - Full Stack Web Developer</title>
+    <title>Derya Öztürk - Full Stack Developer</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/do_logo.png">
     
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
-        /* Ana yazı tipi olarak Inter'i ayarla */
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -24,14 +20,11 @@
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
 
-    <!-- ===== Navigasyon Menüsü ===== -->
     <nav class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-20 top-0">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
-                <!-- Logo / Adınız -->
                 <a href="#" class="text-2xl font-bold text-blue-600">Derya Öztürk</a>
                 
-                <!-- Masaüstü Menü -->
                 <div class="hidden md:flex space-x-6 items-center">
                     <a href="#hakkimda" class="text-gray-600 hover:text-blue-600 transition duration-300">Hakkımda</a>
                     <a href="#hizmetler" class="text-gray-600 hover:text-blue-600 transition duration-300">Hizmetler</a>
@@ -43,7 +36,6 @@
                     </a>
                 </div>
                 
-                <!-- Mobil Menü Butonu -->
                 <button id="menu-button" class="md:hidden text-gray-700 focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -52,7 +44,6 @@
             </div>
         </div>
         
-        <!-- Mobil Menü (Gizli) -->
         <div id="mobile-menu" class="md:hidden bg-white shadow-lg hidden">
             <a href="#hakkimda" class="block py-3 px-4 text-gray-600 hover:bg-gray-100">Hakkımda</a>
             <a href="#hizmetler" class="block py-3 px-4 text-gray-600 hover:bg-gray-100">Hizmetler</a>
@@ -63,26 +54,22 @@
         </div>
     </nav>
 
-    <!-- ===== Hero (Ana Giriş) Bölümü ===== -->
     <section id="hero" class="min-h-screen flex items-center bg-white pt-16">
         <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
-            <!-- Sol Taraf - Metin (CV'den güncellendi) -->
             <div class="text-center md:text-left">
-                <span class="text-blue-600 font-semibold">Full Stack Web Developer</span>
+                <span class="text-blue-600 font-semibold">Full Stack Developer</span>
                 <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mt-2 mb-4">
                     Derya Öztürk
                 </h1>
                 <p class="text-lg text-gray-600 mb-8">
-                    Angular, NestJS, TypeORM ve PostgreSQL kullanarak ölçeklenebilir ve kullanıcı dostu uygulamalar tasarlama ve geliştirme konusunda deneyimli bir Full Stack Web Geliştiricisiyim.
+                    Modern web teknolojileriyle ölçeklenebilir, gerçek zamanlı ve kullanıcı dostu uygulamalar geliştiren bir Full Stack Geliştiriciyim. NestJS, .NET, Angular ve mikroservis mimarileri ekosisteminde performans odaklı çözümler tasarlıyorum.
                 </p>
                 <a href="#iletisim" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold text-lg hover:bg-blue-700 transition duration-300 shadow-lg">
                     Projeleriniz için Buradayım
                 </a>
             </div>
             
-            <!-- Sağ Taraf - Fotoğraf -->
             <div class="flex justify-center">
-                <!-- Kendi fotoğrafınızla değiştirmek için URL'yi güncelleyin -->
                 <img src="images/PP copy.jpeg" 
                      alt="Derya Öztürk Portre Fotoğrafı" 
                      class="rounded-full w-80 h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] object-cover shadow-2xl border-8 border-white">
@@ -90,7 +77,6 @@
         </div>
     </section>
 
-    <!-- ===== Hakkımda Bölümü ===== -->
     <section id="hakkimda" class="py-20 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
@@ -98,280 +84,333 @@
             </h2>
             <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg max-w-4xl mx-auto">
                 <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                    Bursa Teknik Üniversitesi Bilgisayar Mühendisliği mezunuyum. REST API geliştirme, veritabanı optimizasyonu ve Agile/Scrum metodolojileri konularında yetkinliğe sahibim.
+                    Bursa Teknik Üniversitesi Bilgisayar Mühendisliği mezunuyum. Mikroservis mimarisi, Clean Architecture, REST API geliştirme, veritabanı optimizasyonu ve Agile/Scrum metodolojileri konularında yetkinliğe sahibim.
                 </p>
-                <p class="text-lg text-gray-700 leading-relaxed">
-                    Kullanıcı odaklı çözümler üretmeye ve teknik uzmanlığımı sürekli geliştirmeye tutkuluyum. Git, Jira gibi modern araçları kullanarak ve ekip çalışmasına yatkın bir şekilde projelerin başarıya ulaşmasına katkı sağlamayı hedefliyorum.
+                <p class="text-lg text-gray-700 leading-relaxed font-medium">
+                    Kullanıcı odaklı çözümler üretmeye ve teknik uzmanlığımı sürekli geliştirmeye tutkuluyum. NestJS, C# (.NET), Angular, TypeScript, PostgreSQL ve Git gibi modern araçları kullanarak ekip çalışmasına yatkın bir şekilde projelerin başarıya ulaşmasına katkı sağlıyorum.
                 </p>
             </div>
         </div>
     </section>
 
-<!-- ===== Hizmetler Bölümü (eBA eklendi) ===== -->
-    <section id="hizmetler" class="py-20 bg-white">
+    <section id="hizmetler" class="py-24 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-                Sunduğum Hizmetler
-            </h2>
-            <!-- Grid 4'lü olacak şekilde güncellendi -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <!-- Hizmet Kartı 1 -->
-                <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <svg class="w-12 h-12 text-blue-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17.171L21 6.14m-10.45 11.031L3 11.611l1.414-1.414 6.336 6.336 10.636-10.636L21 6.14l-9.7 9.7Z"></path></svg>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Modern Frontend</h3>
-                    <p class="text-gray-600">
-                        Angular, TypeScript, HTML ve SCSS kullanarak dinamik, hızlı ve mobil uyumlu kullanıcı arayüzleri (UI) oluşturuyorum.
-                    </p>
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">Sunduğum Hizmetler</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col h-full">
+                    <div class="w-14 h-14 bg-blue-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17.171L21 6.14m-10.45 11.031L3 11.611l1.414-1.414 6.336 6.336 10.636-10.636L21 6.14l-9.7 9.7Z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Frontend Geliştirme</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">Angular, TypeScript, SignalR ve Modern CSS (Tailwind/SCSS) ile gerçek zamanlı, responsive ve kullanıcı dostu modern arayüzler.</p>
                 </div>
 
-                <!-- Hizmet Kartı 2 -->
-                <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <svg class="w-12 h-12 text-blue-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.25 6.75 6.75 17.25M6.75 6.75l10.5 10.5"></path></svg>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Ölçeklenebilir Backend</h3>
-                    <p class="text-gray-600">
-                        Nest.JS, Node.js ve TypeORM ile yüksek performanslı, güvenli ve ölçeklenebilir RESTful API'ler ve backend sistemleri tasarlıyorum.
-                    </p>
-                </div>
-                
-                <!-- Hizmet Kartı 3 -->
-                <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <svg class="w-12 h-12 text-blue-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path></svg>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Veritabanı Yönetimi</h3>
-                    <p class="text-gray-600">
-                        PostgreSQL, MySQL ve MSSQL veritabanları ile çalışarak veri optimizasyonu ve verimli sorgu yönetimi sunuyorum.
-                    </p>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col h-full">
+                    <div class="w-14 h-14 bg-indigo-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-indigo-600 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-indigo-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.25 6.75 6.75 17.25M6.75 6.75l10.5 10.5"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Backend & Mimari</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">.NET 8 (Clean Architecture), NestJS ve TypeORM mimarisiyle güvenli, ölçeklenebilir RESTful mikroservisler.</p>
                 </div>
 
-                <!-- Hizmet Kartı 4 (eBA) -->
-                <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <svg class="w-12 h-12 text-blue-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.5 14.25l-2.635-2.635a2.25 2.25 0 01-3.182 0l-2.635-2.635a2.25 2.25 0 010-3.182l2.635-2.635a2.25 2.25 0 013.182 0l2.635 2.635a2.25 2.25 0 010 3.182l-2.635 2.635a2.25 2.25 0 01-3.182 0M10.5 6.375L3 13.875M13.5 10.875l-3.375 3.375"></path></svg>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">İş Akışı Otomasyonu</h3>
-                    <p class="text-gray-600">
-                        eBA platformu için kurumsal iş akışları ve otomatik süreçler geliştirerek operasyonel verimliliği artırıyorum.
-                    </s:Description>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col h-full">
+                    <div class="w-14 h-14 bg-emerald-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-emerald-600 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-emerald-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Veritabanı Yönetimi</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">PostgreSQL ve SQL Server üzerinde veri modelleme, optimizasyon, Entity Framework Core entegrasyonu ve arka plan işlemleri.</p>
                 </div>
 
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col h-full">
+                    <div class="w-14 h-14 bg-purple-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-purple-600 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-purple-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.5 14.25l-2.635-2.635a2.25 2.25 0 01-3.182 0l-2.635-2.635a2.25 2.25 0 010-3.182l2.635-2.635a2.25 2.25 0 013.182 0l2.635 2.635a2.25 2.25 0 010 3.182l-2.635 2.635a2.25 2.25 0 01-3.182 0M10.5 6.375L3 13.875M13.5 10.875l-3.375 3.375"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Sistem Entegrasyonu</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">Python FastAPI ile AI servisleri entegrasyonu ve kurum içi iş akışlarının (eBA) dijitalleştirilmesi.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== İş Deneyimi Bölümü ===== -->
-    <section id="deneyim" class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-                İş Deneyimi
-            </h2>
-            <div class="space-y-8 max-w-4xl mx-auto">
-
-                <!-- Deneyim Kartı 1 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg">
-                    <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-2">
-                        <div class="mb-4 sm:mb-0">
-                            <h3 class="text-2xl font-semibold text-gray-900">Software Developer Intern</h3>
-                            <p class="text-lg text-blue-600 font-medium">Renault Group - Bursa, Türkiye</p>
-                        </div>
-                        <div class="w-full sm:w-auto mt-2 sm:mt-0 flex-shrink-0">
-                            <div class="flex items-center justify-between sm:flex-col sm:items-end">
-                                <img src="images/renaultgrouplogo.webp" alt="Renault Group Logo" class="h-10">
-                                <span class="text-gray-500 font-medium whitespace-nowrap sm:mt-2">Haz 2024 - Şub 2025</span>
-                            </div>
-                        </div>
+    <section id="deneyim" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">Profesyonel Deneyim</h2>
+            
+            <div class="relative border-l-2 border-blue-100 ml-3 md:ml-6 space-y-12">
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[9px] top-0 w-5 h-5 bg-blue-600 rounded-full border-4 border-white shadow-md"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Software Developer Intern</h3>
+                        <span class="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full w-fit mt-1 sm:mt-0">Haz 2024 - Şub 2025</span>
                     </div>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li>Nest.JS ve TypeORM kullanarak RESTful API'ler ve ölçeklenebilir backend servisleri tasarlandı.</li>
-                        <li>Angular ve PostgreSQL entegrasyonu ile dinamik frontend bileşenleri oluşturuldu.</li>
-                        <li>Proje teslim hızını ve takibini iyileştirmek için Agile/Scrum, Git ve Jira metodolojileri uygulandı.</li>
-                        <li>Kullanıcı geri bildirimleriyle hata ayıklama ve iyileştirme süreçleri yürütülerek hata çözüm süresi azaltıldı.</li>
+                    <div class="text-gray-500 font-medium mb-4 flex items-center">
+                        <img src="images/renaultgrouplogo.webp" alt="Renault" class="h-5 mr-2 opacity-80">
+                        Renault Group - Bursa
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-100">
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm md:text-base">
+                            <li><strong>Nest.JS ve TypeORM </strong> RESTful API'ler ve ölçeklenebilir backend servisleri tasarladım.</li>
+                            <li><strong>Angular & PostgreSQL</strong> entegrasyonu ile dinamik frontend bileşenleri oluşturdum.</li>
+                            <li>Proje teslim hızını ve takibini iyileştirmek için <strong>Agile/Scrum, Git ve Jira </strong>metodolojileri uyguladım.</li>
+                            <li>Kullanıcı geri bildirimleriyle hata ayıklama ve iyileştirme süreçleri yürüterek hata çözüm süresini azalttım.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[9px] top-0 w-5 h-5 bg-gray-300 rounded-full border-4 border-white shadow-md"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Software Developer Intern</h3>
+                        <span class="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full w-fit mt-1 sm:mt-0">Ağu 2023 - Haz 2024</span>
+                    </div>
+                    <div class="text-gray-500 font-medium mb-4 flex items-center">
+                        <img src="images/renaultgrouplogo.webp" alt="Renault" class="h-5 mr-2 opacity-80">
+                        Renault Group - Bursa
+                    </div>
+
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm md:text-base">
+                        <li><strong>eBA platformu</strong> üzerinde şirket içi workflow süreçleri geliştirdim.</li>
+                        <li><strong>C#</strong> ile backend script’leri yazarak iş süreçlerini otomatikleştirdim.</li>
+                        <li><strong>MSSQL</strong> üzerinde veri işleme ve sorgu operasyonlarını yönettim.</li>
+                        <li>Production ortamındaki entegrasyon hatalarını analiz ederek sistem sürekliliğine katkı sağladım.</li>
+                        <li>İş birimleri ile teknik ekipler arasında iletişim kurarak gereksinimleri teknik çözümlere dönüştürdüm.</li>
                     </ul>
                 </div>
 
-                <!-- Deneyim Kartı 2 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg">
-                    <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-2">
-                        <div class="mb-4 sm:mb-0">
-                            <h3 class="text-2xl font-semibold text-gray-900">Software Developer Intern</h3>
-                            <p class="text-lg text-blue-600 font-medium">Renault Group - Bursa, Türkiye</p>
-                        </div>
-                        <div class="w-full sm:w-auto mt-2 sm:mt-0 flex-shrink-0">
-                            <div class="flex items-center justify-between sm:flex-col sm:items-end">
-                                <img src="images/renaultgrouplogo.webp" alt="Renault Group Logo" class="h-10">
-                                <span class="text-gray-500 font-medium whitespace-nowrap sm:mt-2">Ağu 2023 - Haz 2024</span>
-                            </div>
-                        </div>
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[9px] top-0 w-5 h-5 bg-gray-300 rounded-full border-4 border-white shadow-md"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Software Developer Intern</h3>
+                        <span class="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full w-fit mt-1 sm:mt-0">Ağu 2022 - Eyl 2022</span>
                     </div>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li>eBA platformu üzerinde iş akışları ve otomatik süreçler geliştirildi.</li>
-                        <li>Operasyonel verimliliği ve veri tutarlılığını artıran SQL tabanlı çözümler uygulandı.</li>
-                        <li>Paydaşlarla işbirliği içinde iş akışları iyileştirilerek iş ihtiyaçlarına uyum sağlandı.</li>
+                    <div class="text-gray-500 font-medium mb-4 flex items-center">
+                        <img src="images/brm-logo.png" alt="BRM" class="h-4 mr-2 opacity-80">
+                        BRM Yazılım - Bursa
+                    </div>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm md:text-base">
+                        <li><strong>C# Windows Forms ve SQL Server</strong> kullanılarak masaüstü uygulamaları geliştirdim.</li>
+                        <li>Veritabanı normalizasyonu ve ilişki yapılandırması üzerine pratik çalışmalar yürüttüm.</li>
                     </ul>
                 </div>
-
-                <!-- Deneyim Kartı 3 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg">
-                    <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-2">
-                        <div class="mb-4 sm:mb-0">
-                            <h3 class="text-2xl font-semibold text-gray-900">Software Developer Intern</h3>
-                            <p class="text-lg text-blue-600 font-medium">BRM Yazılım - Bursa, Türkiye</p>
-                        </div>
-                        <div class="w-full sm:w-auto mt-2 sm:mt-0 flex-shrink-0">
-                            <div class="flex items-center justify-between sm:flex-col sm:items-end">
-                                <img src="images/brm-logo.png" alt="BRM Yazılım Logo" class="h-5">
-                                <span class="text-gray-500 font-medium whitespace-nowrap sm:mt-2">Ağu 2022 - Eyl 2022</span>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li>C# ve SQL ile pratik projeler üzerinde çalışılarak backend geliştirme becerileri güçlendirildi.</li>
-                        <li>Veritabanı yönetimi teknikleri uygulanarak sorgu performansı iyileştirildi.</li>
-                    </ul>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- ===== Eğitim & Aktiviteler Bölümü ===== -->
-    <section id="egitim" class="py-20 bg-white">
+    <section id="egitim" class="py-24 bg-white">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-                Eğitim & Aktiviteler
-            </h2>
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-
-                <!-- Eğitim Kartı -->
-                <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Eğitim</h3>
-                    <div class="space-y-4">
-                        <!-- BTÜ -->
-                        <div>
-                            <p class="text-lg font-semibold text-blue-600">Bursa Teknik Üniversitesi</p>
-                            <p class="text-gray-700">Bilgisayar Mühendisliği (Lisans)</p>
-                            <p class="text-gray-500 text-sm">2020 - 2025</p>
+             <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+                        Eğitim
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-blue-600">
+                            <h3 class="font-bold text-gray-900">Bursa Teknik Üniversitesi</h3>
+                            <p class="text-blue-600 text-sm font-medium">Bilgisayar Mühendisliği</p>
+                            <p class="text-gray-500 text-sm mt-1">2020 - 2025</p>
                         </div>
-                        <!-- Anadolu Üni. -->
-                        <div>
-                            <p class="text-lg font-semibold text-blue-600">Anadolu Üniversitesi</p>
-                            <p class="text-gray-700">Yönetim Bilişim Sistemleri (Lisans)</p>
-                            <p class="text-gray-500 text-sm">2025 - 2029 (Açıköğretim)</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Aktiviteler Kartı -->
-                <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Topluluk & Aktiviteler</h3>
-                    <div class="space-y-4">
-                        <!-- BTÜ Bilişim Kodlama -->
-                        <div>
-                            <p class="text-lg font-semibold text-blue-600">Bilişim Kodlama Topluluğu (BTÜ)</p>
-                            <p class="text-gray-700">Başkan Yardımcısı (2021-2023)</p>
-                            <p class="text-gray-700">Yönetim Kurulu Üyesi (2020-2021)</p>
-                        </div>
-                        <!-- İngilizce -->
-                        <div>
-                            <p class="text-lg font-semibold text-blue-600">Dil Yetkinliği</p>
-                            <p class="text-gray-700">İngilizce (B2 Seviye)</p>
+                        <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-indigo-500">
+                            <h3 class="font-bold text-gray-900">Anadolu Üniversitesi</h3>
+                            <p class="text-indigo-600 text-sm font-medium">Yönetim Bilişim Sistemleri</p>
+                            <p class="text-gray-500 text-sm mt-1">2025 - 2029</p>
                         </div>
                     </div>
                 </div>
 
-            </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        Topluluk & Dil
+                    </h2>
+                    <div class="space-y-6">
+                         <div class="bg-white border border-gray-200 p-6 rounded-xl shadow-sm">
+                            <h3 class="font-bold text-gray-900">BTÜ Bilişim Kodlama Topluluğu</h3>
+                            <ul class="mt-2 space-y-2 text-sm text-gray-600">
+                                <li class="flex items-center"><span class="w-2 h-2 bg-gray-400 rounded-full mr-2"></span>Başkan Yardımcısı (2021-2023)</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-gray-400 rounded-full mr-2"></span>Yönetim Kurulu Üyesi (2020-2021)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white border border-gray-200 p-6 rounded-xl shadow-sm flex items-center justify-between">
+                            <div>
+                                <h3 class="font-bold text-gray-900">İngilizce</h3>
+                                <p class="text-gray-500 text-sm">Profesyonel Çalışma Yetkinliği</p>
+                            </div>
+                            <span class="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded text-sm">B2</span>
+                        </div>
+                    </div>
+                </div>
+             </div>
         </div>
     </section>
 
-
-    <!-- ===== Projeler Bölümü ===== -->
     <section id="projeler" class="py-20 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
                 Gerçekleştirdiğim Bazı Projeler
             </h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden group border border-gray-200">
-                        <img src="images/preboarding .jpeg" 
-                            alt="Newcomer Adaptation Project" 
-                            class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
-                        <div class="p-6">
-                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">Newcomer Adaptation Project</h3>
-                            <p class="text-gray-600 mb-4">
-                                Renault Group'ta geliştirilen, sezgisel arayüzler tasarlanan ve başarılı sistem entegrasyonları uygulanan yeni çalışan adaptasyon projesi.
-                            </p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex flex-col xl:flex-row h-full">
+                        <div class="xl:w-2/5 relative overflow-hidden bg-gray-100 min-h-[250px] flex items-center justify-center">
+                             <img src="images/ai-processing.png" alt="GeoTracker Analytics Hub" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6 xl:w-3/5 flex flex-col justify-center">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="bg-purple-100 text-purple-700 text-xs font-bold px-2 py-1 rounded-full">.NET 8</span>
+                                <span class="bg-red-100 text-red-700 text-xs font-bold px-2 py-1 rounded-full">Angular 17</span>
+                                <span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded-full">FastAPI</span>
+                                <span class="bg-blue-100 text-blue-700 text-xs font-bold px-2 py-1 rounded-full">SignalR</span>
                             </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">GeoTracker Analytics</h3>
+                            <p class="text-xs font-semibold text-blue-600 mb-3">Real-Time Polyglot GIS Platform</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Gerçek zamanlı veri işleme, mikroservis iletişimi ve AI analiz motoru prensipleriyle geliştirilmiş CBS tabanlı görselleştirme platformu.
+                            </p>
+                            <ul class="space-y-2 mb-4 text-xs text-gray-600 hidden md:block">
+                                <li class="flex items-start">
+                                    <svg class="w-3.5 h-3.5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span><strong>Mimari:</strong> .NET 8 Backend & Python AI Mikroservisi.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-3.5 h-3.5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span><strong>Real-Time UI:</strong> SignalR ile anlık harita güncellemeleri.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-3.5 h-3.5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span><strong>Veritabanı:</strong> PostgreSQL (Entity Framework Core).</span>
+                                </li>
+                            </ul>
+                            <div class="mt-auto">
+                                <a href="https://github.com/deryaozturkk/GeoTrackerAnalyticsHub" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-sm w-fit">
+                                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.109-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+                                    GitHub'da İncele
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden group border border-gray-200">
-                    <img src="images/admin-tasks-page.png" 
-                        alt="Full Stack Task Manager Projesi" 
-                        class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Task Manager</h3>
-                        <p class="text-gray-600 mb-4">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex flex-col xl:flex-row h-full">
+                        <div class="xl:w-2/5 relative overflow-hidden bg-gray-900 min-h-[250px]">
+                             <img src="images/job-hunter.png" alt="Job Hunter Dashboard" class="w-full h-full object-cover object-left-top group-hover:scale-105 transition-transform duration-300 opacity-90 group-hover:opacity-100">
+                        </div>
+                        <div class="p-6 xl:w-3/5 flex flex-col justify-center">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="bg-red-100 text-red-700 text-xs font-bold px-2 py-1 rounded-full">Angular 17</span>
+                                <span class="bg-pink-100 text-pink-700 text-xs font-bold px-2 py-1 rounded-full">NestJS</span>
+                                <span class="bg-blue-100 text-blue-700 text-xs font-bold px-2 py-1 rounded-full">PostgreSQL</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">Job Hunter</h3>
+                            <p class="text-xs font-semibold text-blue-600 mb-3">Kişisel İş Başvuru Takip Sistemi</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                İş arama sürecini kaotik bir yapıdan çıkarıp veriye dayalı bir stratejiye dönüştüren Full-Stack web uygulaması. Excel karmaşası yerine modern bir takip sistemi.
+                            </p>
+                            <ul class="space-y-2 mb-4 text-xs text-gray-600 hidden md:block">
+                                <li class="flex items-start">
+                                    <svg class="w-3.5 h-3.5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span><strong>Dashboard:</strong> Grafiklerle başvuru analizi.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-3.5 h-3.5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span><strong>Raporlama:</strong> Excel ve PDF dışa aktarma.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-3.5 h-3.5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span><strong>UI/UX:</strong> Dark Mode ve mobil tasarım.</span>
+                                </li>
+                            </ul>
+                            <div class="mt-auto">
+                                <a href="https://github.com/deryaozturkk/job-hunter" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-white bg-gray-900 hover:bg-gray-800 px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-sm w-fit">
+                                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.109-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+                                    GitHub'da İncele
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group border border-gray-200 hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="images/preboarding .jpeg" alt="Newcomer Adaptation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute top-0 right-0 p-2">
+                             <span class="bg-white/90 backdrop-blur text-xs font-bold text-gray-700 px-2 py-1 rounded shadow-sm">Corporate</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                             <span class="bg-purple-100 text-purple-700 text-xs font-bold px-2 py-1 rounded-full">UI/UX Design</span>
+                             <span class="bg-yellow-100 text-yellow-700 text-xs font-bold px-2 py-1 rounded-full">System Integration</span>
+                             <span class="bg-gray-100 text-gray-700 text-xs font-bold px-2 py-1 rounded-full">Process Optimization</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">Newcomer Adaptation</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
+                            Renault Group bünyesinde yeni işe başlayanların onboarding sürecini dijitalleştiren, kullanıcı deneyimi (UX) ve kurumsal kimlik entegrasyonunu birleştiren kapsamlı adaptasyon projesi.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group border border-gray-200 hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="images/admin-tasks-page.png" alt="Task Manager Projesi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-gray-100 text-gray-700 text-xs font-bold px-2 py-1 rounded-full">Angular</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs font-bold px-2 py-1 rounded-full">NestJS</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs font-bold px-2 py-1 rounded-full">RBAC</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">Task Manager</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
                             Angular 17, Nest.JS, PostgreSQL ve TypeORM kullanılarak geliştirilen, JWT tabanlı kimlik doğrulama ve Rol Bazlı Yetkilendirme (RBAC) özellikli görev yönetimi uygulaması.
                         </p>
-                        <div class="space-y-2 mt-4"> 
-                            <a href="https://task-managerui.netlify.app" target="_blank" rel="noopener noreferrer" 
-                            class="inline-block bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 mr-2">
-                                Canlı Demo
-                            </a>
-                            <a href="https://github.com/deryaozturkk/task-manager-ui" target="_blank" rel="noopener noreferrer" 
-                            class="text-blue-600 font-medium hover:underline text-sm mr-2">
-                                GitHub (UI)
-                            </a>
-                            <a href="https://github.com/deryaozturkk/task-manager-api" target="_blank" rel="noopener noreferrer" 
-                            class="text-blue-600 font-medium hover:underline text-sm">
-                                GitHub (API)
+                        <div class="flex flex-wrap gap-3 mt-auto"> 
+                            <a href="https://task-managerui.netlify.app" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition duration-300">
+                                Canlı Demo                                
+                                </a>                               
+                                <a href="https://github.com/deryaozturkk/task-manager-ui" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-gray-100 text-gray-700 border border-gray-200 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200 transition duration-300" title="GitHub UI Kodu">
+                                UI Repo
+                                </a>
+                                <a href="https://github.com/deryaozturkk/task-manager-api" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-gray-100 text-gray-700 border border-gray-200 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200 transition duration-300" title="GitHub API Kodu">
+                                API Repo
+                                </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group border border-gray-200 hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="images/vertexforge.jpeg" alt="VertexForge" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-gray-100 text-gray-700 text-xs font-bold px-2 py-1 rounded-full">TypeScript</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">VertexForge</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
+                            TypeScript tabanlı Kanban benzeri görev yönetimi uygulaması.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="https://github.com/deryaozturkk/VertexForge" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium transition-colors">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.109-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+                                GitHub
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
-                    <img src="images/vertexforge.jpeg" alt="VertexForge" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">VertexForge</h3>
-                        <p class="text-gray-600 mb-4">TypeScript tabanlı Kanban benzeri görev yönetimi uygulaması.</p>
-                        <a href="https://github.com/deryaozturkk/VertexForge" class="text-blue-600 hover:underline">GitHub Bağlantısı</a>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
-                    <img src="images/biopython.png" alt="Biopython" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Biopython</h3>
-                        <p class="text-gray-600 mb-4">Python ile biyoinformatik veri işleme ve dizi manipülasyonu örnekleri.</p>
-                        <a href="https://github.com/deryaozturkk/Biopython-Bioinformatics-Example" class="text-blue-600 hover:underline">GitHub Bağlantısı</a>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
-                    <img src="images/dietwhisperer.jpeg" alt="Diet Whisperer" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Diet Whisperer</h3>
-                        <p class="text-gray-600 mb-4">PHP ile geliştirilmiş kişiselleştirilmiş beslenme planları sunan platform.</p>
-                        <a href="https://github.com/deryaozturkk/DietWhispererProject" class="text-blue-600 hover:underline">GitHub Bağlantısı</a>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
-                    <img src="images/pizzasiparisotomasyonu.png" alt="Pizza Otomasyonu" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Pizza Otomasyonu</h3>
-                        <p class="text-gray-600 mb-4">BRM Yazılım'da geliştirilen C# Windows Forms ve SQL Server ile geliştirilmiş pizza sipariş yönetim sistemi.</p>
-                        <a href="https://github.com/deryaozturkk/PizzaOtomasyon" class="text-blue-600 hover:underline">GitHub Bağlantısı</a>
-                    </div>
-                </div>
-
-
-            </div> </div>
-    </section>
+            </div> 
         </div>
-    </div>
-</section>
+    </section>
 
-
-    <!-- ===== İletişim Bölümü ===== -->
     <section id="iletisim" class="py-20 bg-blue-600 text-white">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">
@@ -381,19 +420,15 @@
                 Projeniz, bir işbirliği fikriniz veya sadece bir 'merhaba' demek için benimle iletişime geçin. En kısa sürede size döneceğim.
             </p>
             
-            <!-- E-posta adresi -->
             <a href="mailto:deryaozturk4988@gmail.com" 
                class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition duration-300 shadow-lg">
                 Bana E-posta Gönder
             </a>
             
-            <!-- Sosyal Medya İkonları -->
             <div class="flex justify-center space-x-6 mt-12">
-                <!-- LinkedIn -->
                 <a href="https://linkedin.com/in/derya-ozturk-" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition duration-300" title="LinkedIn">
                     <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
                 </a>
-                <!-- GitHub -->
                 <a href="https://github.com/deryaozturkk" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition duration-300" title="GitHub">
                     <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.109-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
                 </a>
@@ -401,23 +436,19 @@
         </div>
     </section>
 
-    <!-- ===== Footer ===== -->
     <footer class="bg-gray-800 text-gray-400 py-8 text-center">
-        <p>© 2025 Derya Öztürk. Tüm hakları saklıdır.</p>
+        <p>© 2026 Derya Öztürk. Tüm hakları saklıdır.</p>
     </footer>
 
-    <!-- ===== Mobil Menü için JavaScript ===== -->
     <script>
         const menuButton = document.getElementById('menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         const menuLinks = mobileMenu.querySelectorAll('a');
 
-        // Menü açma/kapama
         menuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Mobil menü linkine tıklandığında menüyü kapat
         menuLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
@@ -427,4 +458,3 @@
 
 </body>
 </html>
-
